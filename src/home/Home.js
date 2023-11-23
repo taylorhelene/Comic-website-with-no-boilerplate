@@ -6,7 +6,6 @@ import Featured from "./Featured";
 import FeaturedCharacters from "./FeaturedCharacters";
 import Characters from "./Characters";
 import Character from "./Character";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {useQuery , gql  , useMutation} from "@apollo/client";
 
 

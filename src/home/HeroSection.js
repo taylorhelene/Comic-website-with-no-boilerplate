@@ -1,4 +1,3 @@
-import 'bootstrap';
 import Carousel from './Carousel';
 import styles from './../page.module.css';
 import React from 'react';
