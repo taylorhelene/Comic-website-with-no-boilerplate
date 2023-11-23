@@ -56,3 +56,9 @@ and added the following object to  webpack
           loader: 'sass-loader'
         }]
       },
+
+# changed to production mode
+
+ performance: {
+    hints: false
+  },
