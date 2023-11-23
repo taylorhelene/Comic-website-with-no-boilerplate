@@ -20,7 +20,9 @@ the way I countered the error was by adding the following object to the rules an
 
 https://webpack.js.org/concepts/loaders/
 
-## Bootstrap was not working . I has to create a _custom.scss module
+## Bootstrap was not working . 
+
+I has to create a _custom.scss module
 
 
 @import "~bootstrap/scss/bootstrap";
@@ -57,7 +59,7 @@ and added the following object to  webpack
         }]
       },
 
-# changed to production mode
+## changed to production mode
 
  performance: {
     hints: false
