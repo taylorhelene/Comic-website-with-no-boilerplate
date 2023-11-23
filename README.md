@@ -28,7 +28,7 @@ I has to create a _custom.scss module
 @import "~bootstrap/scss/bootstrap";
 
 
-and added the following object to  webpack
+Then added the following object to  webpack
 
     {
         test: /\.(scss)$/,
