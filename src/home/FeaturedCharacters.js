@@ -39,7 +39,7 @@ const FeaturedCharacters = (props) =>{
                 <p>{props.name}</p>
                 <p> {props.snapped} </p>
                 <p>{props.power}</p>
-                <p  onClick={props.id ? incrementViews : console.log('g')}>⭐{props.views}</p>
+                <p  onClick={()=>{{props.id ? incrementViews() : console.log('g')}; props.refetchFunction()}}><button> ⭐ </button> {props.views}</p>
             </div>
         </div>
     )

@@ -37,12 +37,14 @@ const HEROESLIST = gql`
 `
 const Home=()=>{
 
-    const {loading, error ,data} = useQuery(HEROES);
+    const {loading, error ,data , refetch} = useQuery(HEROES);
     const a = loading ? 'Loading...' : '';
     const b = error ? `Error! ${error.message}`: '';
 
     const query2 = useQuery(HEROESLIST);
 
+    const refetchFunction=()=>{refetch(); console.log("yes")}
+    
     return(
         <>
         <Header/>
@@ -54,7 +56,7 @@ const Home=()=>{
                 {data?.heroes.map((item)=>{
                     return(
                    
-                    <FeaturedCharacters id={item.id} src={item.image} snapped={item.snapped} power={item.power} name={item.name} views={item.views}/>
+                    <FeaturedCharacters refetchFunction={refetchFunction} id={item.id} src={item.image} snapped={item.snapped} power={item.power} name={item.name} views={item.views}/>
                     
                     )
                 })}
