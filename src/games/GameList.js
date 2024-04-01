@@ -38,7 +38,7 @@ query FeaturedGame($action: Sort, $limit: ID) {
   }
 `
 
-const action = `DESC`;
+const action = `ASC`;
 const limit = 3;
 
 const GamesList=()=>{
